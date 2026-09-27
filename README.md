@@ -29,3 +29,6 @@ Additionally if you are hosting this in a subfolder and using a webserver such a
 You should map port `8000`
 
 Set a path path variable `/config` to where ever you want the images/db to be stored outside of the docker container
+
+# Carter Updates
+- used Python 3.11.9 to create .venv
