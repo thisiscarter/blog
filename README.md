@@ -32,3 +32,9 @@ Set a path path variable `/config` to where ever you want the images/db to be st
 
 # Carter Updates
 - used Python 3.11.9 to create .venv
+commands I ran to get this working:
+on the vps:
+to install python 3.11
+ sudo add-apt-repository ppa:deadsnakes/ppa
+  sudo apt install python3.11
+sudo apt install python3.11-venv python3.11-dev
