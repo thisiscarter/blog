@@ -1,0 +1,18 @@
+[Unit]
+Description=Gunicorn instance to serve thisiscarter.com
+After=network.target
+
+[Service]
+User=carterbot
+Group=www-data
+
+
+[Service]
+User=carterbot
+Group=www-data
+WorkingDirectory=/opt/thisiscarter/blog
+Environment="PATH=/opt/thisiscarter/blog/.venv/bin"
+ExecStart=/opt/thisiscarter/blog/.venv/bin/gunicorn --workers 3 --bind unix:thisiscarter.sock -m 007 wsgi:app
+
+[Install]
+WantedBy=multi-user.target
